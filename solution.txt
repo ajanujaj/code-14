@@ -1,0 +1,4 @@
+def fun(s,count,shift):
+    return eval('0b'+str(s))>>count if shift[0].lower()=='r' else eval('0b'+str(s))<<count
+    
+print(fun(100,2,'Right'))
